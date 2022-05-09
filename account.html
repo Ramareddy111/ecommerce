@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Account-Shopping++</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        </head>
+        <body>
+
+
+
+
+          <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logonew.jpg" width="80px">
+                </div>
+                <nav>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                <img src="images/cart.jpg" width="30px" height="30px">
+                </a>
+            </div>
+
+          </div>
+
+         <!------------------------caccount-page-->
+         <div class="account-page">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-2">
+                         <img src="images/fashion.2.jpg" width=80%>
+                     </div>
+                     <div class="col-2">
+                         <div class="form-container">
+                             <div class="form-btn">
+                                 <span onclick="login()">Login</span>
+                                 <span onclick="register()">Register</span>
+                                 <hr id="Indicator">
+                             </div>
+                             <form id="LoginForm">
+                                 <input type="text" placeholder="Username">
+                                 <input type="password" placeholder="password">
+                                 <button type="submit" class="btn">Login</button>
+                                 <a herf="">Forgot password</a>
+                             </form>
+                             <form id="Regform">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+
+           <!------------------fotter------>
+
+                    <!---------footer------------>
+                    <div class="footer">
+                      <div class="container">
+                        <div class="row">
+                          <div class="footer-col1">
+                            <h3>Download our App</h3>
+                            <p>Download App for Android and ios mobile phone</p>
+                              <div class="applogo">
+                                <img src="images/playstore3.png" alt="">
+                                <img src="images/appstore.png" alt="">
+
+                              </div>
+                          </div>
+                          <div class="footer-col2">
+                            <img src="images/logonew.jpg" alt="">
+                            <p>Our purpose is to sustainably make the pleasure and benefits of fashion accessible to everyone</p>
+
+                          </div>
+                          <div class="footer-col3">
+                            <h3>Useful links</h3>
+                            <ul>
+                              <li>Coupuns</li>
+                              <li>Blog Post</li>
+                              <li>Return Policy</li>
+                              <li>Join Affiliate</li>
+                            </ul>
+
+                          </div>
+                          <div class="footer-col4">
+                            <h3>Follow us</h3>
+                            <ul>
+                              <li>Facebook</li>
+                              <li>Instagram</li>
+                              <li>Twitter</li>
+                              <li>Youtube</li>
+                            </ul>
+
+                          </div>
+
+
+                        </div>
+
+           <!------------js for toogle form-->
+           <script>
+               var LoginForm =document.getElementById("LoginForm");
+               var Regform=document.getElementById("Regform");
+               var indicator=document.getElementById("indicator");
+               function register(){
+                   Regform.style.transform="translatex(0px)";
+                   LoginForm.style.transform="translatex(0px)";
+                   Indicator.style.transform="translatex(100px)";
+               }
+               function login(){
+                   Regform.style.transform="translatex(300px)";
+                   LoginForm.style.transform="translatex(300px)";
+                   Indicator.style.transform="translatex(0px)";
+               }
+
+
+           </script>
+
+        </body>
+
+    </html>
